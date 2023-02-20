@@ -1,87 +1,52 @@
-<!DOCTYPE html>
-
-<html>
-
-    <head>
-
-        <link rel="stylesheet" href="nonnih.css">
-
-    </head>
-
-    <body>
+// document.getElementById("laskuri-el").innerText = 5
+let nimi = "Orja Keisari"
+let terve = "Welcome back"
+let laskuri = 0
+let tallennus = "Orjat: "
+let tervekutsu = document.getElementById("Terve-el")
+let tallennuskutsu = document.getElementById("tallennus-el")
 
 
-      <div class="otsikko">
+tallennuskutsu.innerText = tallennus
+console.log(terve + nimi)
+tervekutsu.innerText=terve + nimi
 
-        <h1>Orjien määrä kellarissa</h1>
-      
-      </div>
+document.getElementById("Nappula")
 
-      <div class="numero">
+function IhmisenLisaus(){
 
-        <h2 id="laskuri-el">0</h2>
-      
-      </div>
+laskuri = laskuri + 1
+console.log(laskuri)
+document.getElementById("laskuri-el").innerText = laskuri
 
-      <div class="napit">
+}
 
-        <button id="Nappula" onclick="IhmisenLisaus()">Lisää orja</button>
-        <button id="Nappula2" onclick="IhmisenPoisto()">Poista orja</button>
-        <button id="Nappula3" onclick="KaikkiPois()">Vapauta kaikki</button>
-        <button id="Nappula4" onclick="Tallenna()">Kirjanpito</button>
-        <h3 id="tallennus-el">0</h2>
+function IhmisenPoisto(){
+ if (laskuri >= 1)
+ laskuri = laskuri - 1
+ console.log(laskuri)
+ document.getElementById("laskuri-el").innerText = laskuri
 
-      </div>
+}
 
-      
+function KaikkiPois(){
 
-        <script src="index.js">
-
-        </script>
-
-      <div class="gif">
-
-         <img src="https://media.tenor.com/2vccARVmeP0AAAAC/take-the-l-bozo.gif" width="200px" height="200px"/>
-
-      </div>
-
-      <div class="gif2">
-
-         <img src="https://media.tenor.com/8IBjwZuCZUoAAAAC/laugh-black-man.gif" width="250px" height="250px"/>
-
-      </div>
-
-      <div class="linkki">
-
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Pakene kellarista!</a>
-
-      </div>
+ laskuri = 0
+ console.log(laskuri)
+ document.getElementById("laskuri-el").innerText = laskuri
 
 
-    </body>
+}
 
+function Tallenna(){
 
+ console.log(laskuri)
+ tallennus = tallennus + " - " + laskuri
+ tallennuskutsu.innerText = tallennus
+ 
 
-</html>
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
-</html>
 
 
 
