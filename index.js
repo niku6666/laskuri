@@ -1,27 +1,87 @@
-// document.getElementById("laskuri-el").innerText = 5
-let laskuri= 0
+<!DOCTYPE html>
 
-document.getElementById("Nappula")
+<html>
 
-function IhmisenLisaus(){
+    <head>
 
-laskuri = laskuri + 1
+        <link rel="stylesheet" href="nonnih.css">
 
-console.log(laskuri)
+    </head>
 
-document.getElementById("laskuri-el").innerText = laskuri
+    <body>
 
-}
 
-function IhmisenPoisto(){
+      <div class="otsikko">
 
- laskuri = laskuri - 1
+        <h1>Orjien määrä kellarissa</h1>
+      
+      </div>
 
-console.log(laskuri)
+      <div class="numero">
 
-document.getElementById("laskuri-el").innerText = laskuri
+        <h2 id="laskuri-el">0</h2>
+      
+      </div>
 
-}
+      <div class="napit">
+
+        <button id="Nappula" onclick="IhmisenLisaus()">Lisää orja</button>
+        <button id="Nappula2" onclick="IhmisenPoisto()">Poista orja</button>
+        <button id="Nappula3" onclick="KaikkiPois()">Vapauta kaikki</button>
+        <button id="Nappula4" onclick="Tallenna()">Kirjanpito</button>
+        <h3 id="tallennus-el">0</h2>
+
+      </div>
+
+      
+
+        <script src="index.js">
+
+        </script>
+
+      <div class="gif">
+
+         <img src="https://media.tenor.com/2vccARVmeP0AAAAC/take-the-l-bozo.gif" width="200px" height="200px"/>
+
+      </div>
+
+      <div class="gif2">
+
+         <img src="https://media.tenor.com/8IBjwZuCZUoAAAAC/laugh-black-man.gif" width="250px" height="250px"/>
+
+      </div>
+
+      <div class="linkki">
+
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Pakene kellarista!</a>
+
+      </div>
+
+
+    </body>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
 
 
 
