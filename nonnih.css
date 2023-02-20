@@ -37,7 +37,7 @@ body {
 .napit {
     position: absolute;
     top: 175px;
-    left: 145px;
+    left: 105px;
 }
 
 h1 {
@@ -64,7 +64,11 @@ h2 {
 
 }
 
+h3 {
 
+color:aliceblue
+
+}
 
 nappula {
 
@@ -101,5 +105,42 @@ nappula {
     background: darkgreen;
 
 }
+
+.gif {
+
+position: absolute;
+top: 660px;
+left: 840px
+
+}
+
+.gif2 {
+
+position: absolute;
+top: 140px;
+left: 810px;
+
+}
+
+.linkki {
+
+ position: absolute;
+ background-color: yellow;
+ border: 3px solid red;
+ right: 20px;
+ bottom: 20px;
+}
+
+a{
+
+ color: red;
+
+}
+
+button{
+
+    background-color: pink;
+    
+    }
 
 sisältää pikavalikon
